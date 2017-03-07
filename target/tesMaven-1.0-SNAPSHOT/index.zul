@@ -5,69 +5,13 @@
         <!-- div form -->
         <div  >
             <separator/>
-            <div width="98%">
-                <span width="100%">
-                    <div sclass="sectionTitle">
-                        <separator/>
-                        <label id="lcaption" sclass="sectionTitleLabel" value="Add/Edit Lokasi"/>
-                        <label id="readOnly" sclass="sectionTitleLabel" value="(ReadOnly)"/>
-                        <image src="@load(fxStatus.dirty?'images/unsaved32x32.png':'')"/>
-                        <separator/>
-                    </div>
-                </span>
-                
-                <div id="buttonsDiv" style="float:right;margin-top:6px;">
-                    <button label="Save and Close" mold="trendy"
-                        
-                        sclass="mybutton button green small"
-                            image="/images/button/white/save_icon16.png">
-                    </button>
-                    <button label="Save and Add" mold="trendy"
-                        
-                        sclass="mybutton button green small"
-                             image="/images/button/white/doc_new_icon16.png">
-                    </button>
-                    <button 
-                        mold = "trendy" onClick="@command('cancel')"
-                        sclass="mybutton button red small"
-                        image="/images/button/white/cancel_icon16.png">
-                    </button>
-                </div>
-                <div style="clear:both;"></div>
-                <div sclass="sectionSeperator"></div>
-            </div>
             
-            <span width="100%">
-                <div sclass="sectionTitle">
-                    <separator/>
-                    <label value="Perkiraan" sclass="sectionTitleLabel"/>
-                    <separator/>
-                </div>
-            </span>
             
-            <panel width="95%" sclass="sectionPanel">
-                <panelchildren>
-                    <grid sclass="vgrid">
-                        <columns>
-                            <column width="35%" align="right"></column>
-                            <column width="65%" ></column>
-                        </columns>
-                       
-                        <rows>
-                            <row>
-                                <label value="Lokasi/Nomor"/>
-                                <textbox id="lokasi" mold="rounded"  width="40%" maxlength="10" constraint="no empty"/>
-                            </row>
-                            <row>
-                                <label value="Nama"/>
-                                <textbox id="nama" mold="rounded"  width="40%" maxlength="10" constraint="no empty"/>
-                            </row>
-                        </rows>
-                    </grid>
-                </panelchildren>
-            </panel>
             
-            <div width="98%">
+            
+            
+            
+            <div width="100%">
                 <listbox id="" mold="paging" pageSize="10" pagingPosition="top"
                      selectedItem="@bind(vm.selectedItem)" model="@load(vm.allRecordsInDB)"
                      sclass="rzlist">
